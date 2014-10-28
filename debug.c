@@ -27,15 +27,13 @@
  */
 void DBG_TRACE(char * szFmt, ...)
 {
-		char	szLocFmt[256]	= "";
-		va_list	arguments;
-
-		va_start(arguments, szFmt);
-
-		sprintf(szLocFmt, "\n%s", szFmt);
-		vfprintf(stderr, szLocFmt, arguments);
-
-		va_end(arguments);
+    char	szLocFmt[256]	= "";
+    va_list	arguments;
+    
+    va_start(arguments, szFmt);
+    sprintf(szLocFmt, "\n%s", szFmt);
+    vfprintf(stderr, szLocFmt, arguments);
+    va_end(arguments);
 }
 #endif
 
