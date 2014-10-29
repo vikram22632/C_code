@@ -6,8 +6,8 @@
 
 typedef enum
 {
-	false = 0,
-	true
+	vb_false = 0,
+	vb_true
 }
 VBOOL;
 
