@@ -100,7 +100,7 @@ void TDBG_TRACE(char * szFmt, ...)
     
     va_start(arguments, szFmt);
     /* Format: dd/mm/yyyy-hhmmss: data */
-    sprintf(szLocFmt, "\n%02d/02d/%04d-%02%02%02: %s", pstTime->tm_mday,
+    sprintf(szLocFmt, "\n%02d/%02d/%04d-%02d%02d%02d: %s", pstTime->tm_mday,
                 pstTime->tm_mon, pstTime->tm_year + 1900, pstTime->tm_hour,
                 pstTime->tm_min, pstTime->tm_sec, szFmt);
     vfprintf(dbgFp, szLocFmt, arguments);
