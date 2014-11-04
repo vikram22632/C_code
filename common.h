@@ -12,6 +12,7 @@ typedef enum
 VBOOL;
 
 typedef unsigned int	uint;
+typedef unsigned char   uchar;
 typdeef unsigned long	ulong;
 typedef void *			any_t;
 
